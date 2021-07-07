@@ -7,13 +7,7 @@ exports.addfriendcontroller = (req, res) => {
         Language: data.Language,
         AboutAuthor: data.AboutAuthor,
     });
-    Book.save() //.then((data) => {
-        //     console.log("data", data);
-        //     res.send(data);
-        // }).catch((err) => {
-        //     console.log("err", err);
-        //     res.send("unable to send");
-        // });
+    Book.save();
 };
 const asyncfun = async(status, status1) => {
     try {
